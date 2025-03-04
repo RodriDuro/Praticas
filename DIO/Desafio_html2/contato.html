@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="unidades.html">Unidades</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <h1>CLÍNICA MÉDICA XYZ</h1>
+                <h2>SUA SAÚDE É NOSSA PRIORIDADE</h2>
+            </div>
+    
+            <div class="content">
+                <h3>Entre em Contato Conosco</h3>
+                <form id="contactForm" action="javascript:void(0);">
+                    <label for="name">Nome:</label><br>
+                    <input type="text" id="name" name="name" required oninvalid="this.setCustomValidity('Por favor, preencha seu nome.')" oninput="this.setCustomValidity('')"><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required oninvalid="this.setCustomValidity('Por favor, preencha seu email no formato correto: email@email.com')" oninput="this.setCustomValidity('')"><br><br>
+                    
+                    <label for="phone">Telefone:</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]+" inputmode="numeric" required oninvalid="this.setCustomValidity('Por favor, preencha seu telefone com números.')" oninput="this.setCustomValidity('')"><br><br>
+                    
+                    <label for="message">Mensagem:</label><br>
+                    <textarea id="message" name="message" rows="10" required oninvalid="this.setCustomValidity('Por favor, preencha sua mensagem.')" oninput="this.setCustomValidity('')"></textarea><br><br>
+                    
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </form>
+            </div>
+    
+            <div class="footer">
+                <p>&copy; 2025 Clínica Médica XYZ. Todos os direitos reservados.</p>
+                <h5>Unidade 1 - Santana: (11) 1234-5679 --  Unidade 2 - República: (11) 2345-6789</h5>
+                <h5>Unidade 3 - Tatuapé: (11) 3456-7890 --  Unidade 4 - Vila Nova Conceição: (11) 4567-8901</h5>
+                <h5>Unidade 5 - Pinheiros: (11) 5678-9012</h5>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function() {
+            alert('Mensagem enviada com sucesso!');
+        });
+    </script>
+</body>
+</html>

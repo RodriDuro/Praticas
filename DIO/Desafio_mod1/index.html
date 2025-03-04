@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio DIO MOD 1 HTML - Tag Form</title>
+</head>
+<body>
+    <h1>Tag <<b>form</b>>, como funciona e seus atributos.</h1>
+    <hr>
+
+    <h2>&rarr; Índice</h2>
+        <ul>
+            <li><a href="#sign">Significado</a></li>
+            <li><a href="#atri">Atributos</li>
+            <li><a href="#exe">Exemplo</li>
+            <li><a href="#conc">Conclusão</li>
+            <li><a href="#refe">Link de referências</a></li>
+        </ul>  
+    <hr>    
+    <h2 id="sign">&rarr; Significado</h2>
+    
+        <p>A tag HTML <<b>form</b>> e uma das mais importantes tags que servem para criar formulários simples ou dinamicos. Pode ser utilizada em conjunto com outras tags para de coleta de dados com as seguintes tags:<br></p>
+
+            <ul>
+                <li><i>input</i> - Campo de entrada de dados.</li>
+                <li><i>textarea</i> - Área de texto para entrada de dados.</li>
+                <li><i>button</i> - Botão clicável.</li>
+                <li><i>select</i> - Menu suspenso para seleção de opções.</li>
+                <li><i>option</i> - Opção dentro de um menu suspenso.</li>
+                <li><i>optgroup</i> - Grupo de opções dentro de um menu suspenso.</li>
+                <li><i>fieldset</i> - Agrupamento de elementos de formulário.</li>
+                <li><i>label</i> - Rótulo para um elemento de formulário.</li>
+                <li><i>output</i> - Saída de dados calculados.</li>
+            </ul>
+
+        <p> Ele funciona como um container inteligente que agrupa campos de entrada, botões e validações para facilitar a criação dos formularios.</p>
+
+    <h2 id="atri">&rarr; Atributos</h2>
+        <p>A tag <<b>form</b>> possui vários atributos que podem ser usados para controlar o comportamento do formulário. Alguns atributos são obrigatórios, enquanto outros são opcionais. Os atributos mais comuns da tag <<b>form</b>> são:</p>
+            <ul>
+                <li><b>action</b> - Define para onde os dados do formulário serão enviados.</li>
+                <li><b>method</b> - Define o método de envio dos dados do formulário.</li>
+                <li><b>target</b> - Define onde abrir o documento recebido após o envio do formulário.</li>
+                <li><b>autocomplete</b> - Define se o formulário deve ou não ter autocompletar.</li>
+                <li><b>enctype</b> - Define como os dados do formulário devem ser codificados ao enviá-los ao servidor.</li>
+                <li><b>name</b> - Define o nome do formulário.</li>
+                <li><b>novalidate</b> - Define que o formulário não deve ser validado quando enviado.</li>
+            </ul>
+
+    <h2 id="exe">&rarr; Exemplo</h2>
+        <p>Exemplo de um formulário simples:</p>
+            <pre
+                <form action="/action_page.php" method="get">
+                    <label for="fname">Nome:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Sobrenome:</label><br>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </pre>    
+        <p>A partir do exemplo acima, podemos ver que o formulário é composto por um campo de entrada de texto para o nome, um campo de entrada de texto para o sobrenome e um botão de envio. Quando o botão de envio é clicado, os dados do formulário são enviados para o arquivo action_page.php usando o método GET</p>
+    
+    <h2 id="conc">&rarr; Conclusão</h2>
+        <p>A tag <<b>form</b>> é uma das tags mais importantes em HTML, pois permite criar formulários para coletar dados dos usuários. Ela é usada em conjunto com outras tags de entrada de dados para criar formulários interativos e dinâmicos. Além disso, a tag <<b>form</b>> possui vários atributos que podem ser usados para controlar o comportamento do formulário, como o método de envio dos dados, o destino dos dados e a codificação dos dados. Em resumo, a tag <<b>form</b>> é essencial para criar formulários em HTML e é uma das tags mais versáteis e poderosas da linguagem.</p>
+    <h3 id="refe">Fonte: <a href="https://www.w3schools.com/html/html_forms.asp">W3Schools</a></h3>
+    
+</body>
+</html>
