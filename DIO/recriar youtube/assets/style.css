@@ -1,0 +1,149 @@
+:root {
+    height: 1024px;
+    width: 1440px;
+    font-family: Roboto;
+}
+
+.header__main {
+    display: flex;
+    flex-direction: column;
+}
+.test{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 56px;
+    background-color: #fff;
+}
+
+.header__start {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header__menu {
+    padding: 0 24px 0 0;
+    cursor: pointer;
+}
+
+.header__logo {
+    width: 90px;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 728px;
+    margin: 0 auto;
+}
+
+.video-header {
+    width: 1002px;    
+}
+
+.header__search-input {
+    width: 100%;
+    max-width: 540px;
+    padding: 0 4px 0 16px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 2px 0 0 2px;
+    border-right: none;
+    font-size: 16px;
+}
+
+.header__search-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+
+.header__icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px;
+}
+
+.header__icons img {
+    cursor: pointer;
+}
+
+.video-header__container {
+    padding: 20px 50px;
+}
+
+.video-header__info h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 0 50px;
+}
+
+.video-info {
+    display: flex;
+    width: 952px;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0 0 50px;
+    gap: 50px;
+}
+
+.video-info2 {
+    display: flex;
+    width: 510px;
+    flex-direction: column;
+    padding: 0 0 0 50px;
+    font-size: 14px;
+}
+
+.text__1 {
+    font-weight: bold;
+}
+
+.text__2 {
+    margin: 0;
+}
+.video-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    margin-top: 20px;
+
+}
+.video-sidebar p{
+    margin: 0;
+    margin-left: 10px;
+    font-size: 10px;
+}
+.video-sidebar h3{
+    margin-top: 0;
+    margin-left: 10px;
+    font-size: 14px;
+
+}
+.video-sidebar table{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.video-sidebar td{
+    padding: 0;
+}
+#title1 {
+    margin-bottom: 10px;
+}
